@@ -55,7 +55,7 @@ pkg install -y git
 ```
 ```
 # 1. Clone this repository
-git clone https://github.com/AbuZar-Ansarii/Hermes-Agent-On-Android.git](https://github.com/tuanfung/Hermes-Agent-On-Android-F.git
+git clone https://github.com/tuanfung/Hermes-Agent-On-Android-F.git
 cd Hermes-Agent-On-Android-F
 
 # 2. Make the script executable
