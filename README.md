@@ -51,12 +51,12 @@ curl -fsSL https://raw.githubusercontent.com/AbuZar-Ansarii/Hermes-Agent-On-Andr
 ## 🛠️ Manual Installation (Recommended)
 Prefer to do it yourself? Here's the step-by-step:
 ```
-pkg install git
+pkg install -y git
 ```
 ```
 # 1. Clone this repository
-git clone https://github.com/AbuZar-Ansarii/Hermes-Agent-On-Android.git
-cd Hermes-Agent-On-Android
+git clone https://github.com/AbuZar-Ansarii/Hermes-Agent-On-Android.git](https://github.com/tuanfung/Hermes-Agent-On-Android-F.git
+cd Hermes-Agent-On-Android-F
 
 # 2. Make the script executable
 chmod +x agent_install.sh
