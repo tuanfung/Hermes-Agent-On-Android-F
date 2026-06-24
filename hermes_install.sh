@@ -22,7 +22,7 @@ pkg update && pkg upgrade -y
 # Install dependencies
 pkg install -y git python clang rust make pkg-config libffi openssl nodejs ripgrep ffmpeg
 
-pip install uv
+pkg install uv
 
 uv python install 3.13
 
