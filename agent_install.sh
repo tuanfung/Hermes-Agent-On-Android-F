@@ -41,7 +41,8 @@ proot-distro login ubuntu -- bash -c "
     source venv/bin/activate
 
     pip install --upgrade pip
-    pip install -e .
+    pip install uv
+    uv pip install -e .
 "
 echo -e "${CYN}===================================================${RST}"
 echo -e "${GRN}      ✅ Hermes Agent installed successfully!"
