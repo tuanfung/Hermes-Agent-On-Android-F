@@ -42,7 +42,7 @@ proot-distro login ubuntu -- bash -c "
 
     pip install --upgrade pip
     pip install uv
-    uv python install 3.13
+    
     uv pip install -e .
 "
 echo -e "${CYN}===================================================${RST}"
