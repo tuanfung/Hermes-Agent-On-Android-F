@@ -22,6 +22,10 @@ pkg update && pkg upgrade -y
 # Install dependencies
 pkg install -y git python clang rust make pkg-config libffi openssl nodejs ripgrep ffmpeg
 
+pip install uv
+
+uv python install 3.13
+
 # Clone repository
 git clone --recurse-submodules https://github.com/NousResearch/hermes-agent.git
 
@@ -29,17 +33,17 @@ git clone --recurse-submodules https://github.com/NousResearch/hermes-agent.git
 cd hermes-agent
 
 # Setup Python virtual environment
-python -m venv venv
+uv python -m venv venv
 source venv/bin/activate
 
 # Set Android API level
 export ANDROID_API_LEVEL="$(getprop ro.build.version.sdk)"
 
 # Upgrade pip tools
-python -m pip install --upgrade pip setuptools wheel
+uv python -m pip install --upgrade pip setuptools wheel
 
 # Install Hermes with Termux support
-python -m pip install -e '.[termux]' -c constraints-termux.txt
+uv python -m pip install -e '.[termux]' -c constraints-termux.txt
 
 # Create global symlink
 ln -sf "$PWD/venv/bin/hermes" "$PREFIX/bin/hermes"
